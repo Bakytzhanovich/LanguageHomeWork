@@ -14,6 +14,17 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     @IBOutlet weak var languageButton: UIButton!
     
     @IBOutlet weak var languageLabel: UILabel!
+    
+    @IBOutlet weak var privateInformationButton: UIButton!
+    
+    @IBOutlet weak var privateInformationLabel: UILabel!
+    
+    @IBOutlet weak var passwordButton: UIButton!
+    
+    @IBOutlet weak var rulesButton: UIButton!
+    
+    @IBOutlet weak var modeButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -26,6 +37,11 @@ class ProfileViewController: UIViewController, LanguageProtocol {
     func configureViews() {
         myProfileLabel.text = "MY_PROFILE".localized()
         languageButton.setTitle("LANGUAGE".localized(), for: .normal)
+        privateInformationButton.setTitle("PRIVATE INFORMATION".localized(), for: .normal)
+        privateInformationLabel.text = "PROCESSING".localized()
+        passwordButton.setTitle("PASSWORD".localized(), for: .normal)
+        rulesButton.setTitle("RULES".localized(), for: .normal)
+        modeButton.setTitle("MODE".localized(), for: .normal)
         
         if Localize.currentLanguage() == "ru" {
             languageLabel.text = "Русский"

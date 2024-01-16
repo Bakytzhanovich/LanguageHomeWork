@@ -13,7 +13,7 @@ class FavoriteTableViewController: UITableViewController {
     
     var arrayTitle = ["Қызғалдақтар мекені ", "Суперкөлік Самұрық", "Айдар", "Каникулы off-line 2"]
 
-//    var arrayYear = ["2022 • Телехикая • Мультфильм", "2022 • Телехикая • Мультфильм", "2022 • Телехикая • Мультфильм", "2022 • Телехикая • Мультфильм"]
+//    var arrayYear = ["2020 • Телехикая • Мультфильм", "2020 • Телехикая • Мультфильм", "2020 • Телехикая • Мультфильм", "2018 • Телехикая • Мультфильм"]
 
     
     override func viewDidLoad() {
@@ -48,6 +48,7 @@ class FavoriteTableViewController: UITableViewController {
         let title = cell.viewWithTag(1) as! UILabel
         title.text = arrayTitle[indexPath.row]
  
+        
 
         return cell
     }

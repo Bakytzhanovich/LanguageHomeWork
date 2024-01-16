@@ -29,8 +29,7 @@ class MovieTableViewCell: UITableViewCell {
     
     func setData(movie: String) {
         posterImageView.image = UIImage(named: movie)
-//        nameLabel.text = movie
-//        yearLabel.text = movie
+
        
     }
 

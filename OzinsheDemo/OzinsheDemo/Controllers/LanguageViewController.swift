@@ -31,7 +31,7 @@ class LanguageViewController: UIViewController, UITableViewDelegate, UITableView
         
         backgroundView.layer.cornerRadius = 32
         backgroundView.clipsToBounds = true
-        backgroundView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMaxYCorner]
+        backgroundView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dismissView))
         tap.delegate = self
